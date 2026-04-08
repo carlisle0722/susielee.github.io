@@ -7,53 +7,378 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav class="nav">
-      <h1 class="logo"> Susie Lee </h1>
-      <ul class="menu">
-        <li><a href="#about">소개</a></li>
-        <li><a href="#projects">프로젝트</a></li>
-        <li><a href="#contact">연락처</a></li>
-      </ul>
-    </nav>
-
-    <div class="hero-content">
-      <h2>안녕하세요, 이수지입니다.</h2>
-      <p>자동화와 인프라 운영에 관심 있는 엔지니어입니다.</p>
-      <a class="btn" href="#projects">프로젝트 보기</a>
+  <div class="nav-wrap">
+    <div class="container nav">
+      <a class="brand" href="#top">SUJI LEE</a>
+      <div class="menu">
+        <a href="#about">소개</a>
+        <a href="#strength">강점</a>
+        <a href="#stack">기술 스택</a>
+        <a href="#career">경력</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#education">학력·자격</a>
+        <a href="#contact">연락처</a>
+      </div>
     </div>
-  </header>
+  </div>
 
-  <main>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-main">
+          <div>
+            <span class="eyebrow">Infra Automation Engineer · Systems Engineer</span>
+            <h1>운영 안정성과 자동화 품질을 높이는<br />이수지입니다.</h1>
+            <p class="hero-sub">
+              Ansible 기반 인프라 자동화, 예방점검, 운영 표준화, Python 기반 확장 개발 경험을 바탕으로
+              다양한 OS·네트워크·미들웨어·DB 환경에서 실무형 자동화를 구축해왔습니다.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#projects">대표 프로젝트 보기</a>
+              <a class="btn secondary" href="#contact">연락처 보기</a>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>1년 1개월+</strong>
+              <span>인프라 자동화 실무 경험</span>
+            </div>
+            <div class="stat">
+              <strong>OS·NW·MW·DB</strong>
+              <span>다양한 운영환경 점검·구축 자동화</span>
+            </div>
+            <div class="stat">
+              <strong>Python · Ansible</strong>
+              <span>필터 클래스, 커스텀 모듈, 플레이북 확장</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <div class="profile-box">
+            <h2>About Me</h2>
+            <p>
+              자동화를 단순한 스크립트 작성이 아니라, 현장의 운영 기준을 코드로 구조화하는 일로 생각합니다.
+              안정적으로 동작하고, 반복 가능하며, 현업이 바로 사용할 수 있는 자동화를 만드는 데 강점이 있습니다.
+            </p>
+          </div>
+
+          <ul class="mini-list">
+            <li><strong>현재 직무</strong><br />알티넷솔루션 · 솔루션지원팀 · 시스템엔지니어</li>
+            <li><strong>관심 분야</strong><br />인프라 자동화 · 운영 표준화 · 예방점검 · DR/이관</li>
+            <li><strong>키워드</strong><br />Linux · Ansible · Python · JEUS · Cloud · Network</li>
+          </ul>
+
+          <ul class="contact-list">
+            <li><strong>Email</strong><br />suzy0722@naver.com</li>
+            <li><strong>GitHub</strong><br />여기에 GitHub 주소 추가</li>
+            <li><strong>Blog / Notion</strong><br />여기에 기술 기록 링크 추가</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
     <section id="about" class="section">
-      <h3>About Me</h3>
-      <p>
-        저는 시스템 자동화와 운영 효율화를 좋아합니다.
-        Ansible, Linux, Python 기반 작업을 해왔습니다.
-      </p>
+      <div class="container">
+        <div class="section-head">
+          <h2>소개</h2>
+          <p>레퍼런스 사이트의 흐름을 참고하되, 당신의 이력서에 맞게 “자동화 실무형 인프라 엔지니어”라는 인상을 먼저 주도록 구성했습니다.</p>
+        </div>
+        <div class="section-card intro-grid">
+          <div>
+            <p>
+              저는 다양한 운영환경에서 예방점검과 구축 자동화를 수행해온 시스템 엔지니어입니다.
+              Linux, Windows, Network, DB, JEUS, HP-UX 등 서로 다른 환경을 하나의 자동화 체계 안에 녹여내는 작업을 해왔고,
+              Python 기반 로직 확장과 Ansible 코드 구조 개선까지 경험했습니다.
+            </p>
+            <p>
+              단순히 명령을 자동 실행하는 수준을 넘어, 점검 기준을 코드로 표현하고 결과를 일관되게 판정하는 구조를 만드는 데 익숙합니다.
+              실무에서 바로 쓰이는 예방점검, 재해복구, 환경 이관 자동화를 통해 운영 효율과 품질을 높여왔습니다.
+            </p>
+          </div>
+          <div>
+            <ul class="bullet-list">
+              <li>행안부 기준 예방점검 자동화 체계 구축 경험</li>
+              <li>Python 필터 클래스 및 Ansible Custom Module 기반 기능 확장</li>
+              <li>금융권·공공기관 프로젝트 중심의 실무 자동화 경험</li>
+              <li>Azure VM 기반 DR 및 인프라 이관 수행 경험</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="strength" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>핵심 강점</h2>
+          <p>남의 포트폴리오처럼 영역을 나누되, 기술지원보다 자동화 구현 역량이 더 선명하게 보이도록 재구성했습니다.</p>
+        </div>
+        <div class="career-grid">
+          <article class="career-item">
+            <div class="career-top">
+              <h3>운영 기준을 코드로 바꾸는 자동화</h3>
+              <span class="tag">Automation</span>
+            </div>
+            <p>반복 작업을 줄이는 것을 넘어, 점검 기준과 판정 로직을 코드화하여 누구나 같은 기준으로 운영할 수 있는 자동화를 지향합니다.</p>
+            <ul class="bullet-list">
+              <li>Ansible 플레이북 기반 예방점검·구축 자동화</li>
+              <li>명령어 결과 파싱 및 Pass/Fail 판정 로직 구현</li>
+              <li>운영환경별 명령 구조 차이를 고려한 코드 설계</li>
+            </ul>
+          </article>
+
+          <article class="career-item">
+            <div class="career-top">
+              <h3>다양한 인프라 환경에 대한 실무 대응</h3>
+              <span class="tag">Infra</span>
+            </div>
+            <p>서버, 네트워크, 미들웨어, DB 등 여러 계층을 함께 다루며 실제 운영 환경에 맞춘 자동화를 구축해왔습니다.</p>
+            <ul class="bullet-list">
+              <li>Linux, Windows, HP-UX, Cisco, L2/L3 Switch</li>
+              <li>JEUS, Apache, PostgreSQL, Oracle, MariaDB, MySQL</li>
+              <li>기관별 기준에 맞춘 점검·구축·복구 자동화 경험</li>
+            </ul>
+          </article>
+
+          <article class="career-item">
+            <div class="career-top">
+              <h3>Python 기반 확장 개발 역량</h3>
+              <span class="tag">Python</span>
+            </div>
+            <p>자동화 도구의 한계를 넘기 위해 커스텀 모듈, 필터 클래스, 결과 처리 로직을 직접 구현해 기능을 확장할 수 있습니다.</p>
+            <ul class="bullet-list">
+              <li>커맨드 결과 구조화 및 필터링 로직 구현</li>
+              <li>멀티라인 명령어·heredoc 대응 구조 설계 경험</li>
+              <li>재사용 가능한 점검 클래스 구조화</li>
+            </ul>
+          </article>
+
+          <article class="career-item">
+            <div class="career-top">
+              <h3>DR·이관·운영 안정화 경험</h3>
+              <span class="tag">Cloud / DR</span>
+            </div>
+            <p>단일 서버 운영뿐 아니라 재해복구 시나리오, 클라우드 이관, 서비스 재기동 등 운영 연속성을 확보하는 작업을 수행했습니다.</p>
+            <ul class="bullet-list">
+              <li>Azure VM 환경 서버 복제 및 파일시스템 이관</li>
+              <li>WAS/WEB 중지·기동 자동화 및 비밀번호 변경 자동화</li>
+              <li>복구 시나리오에 따른 운영 절차 표준화 경험</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>기술 스택</h2>
+          <p>이 섹션은 추후 실무 비중에 따라 그룹과 순서를 계속 다듬으면 좋습니다.</p>
+        </div>
+        <div class="section-card">
+          <h3>Automation / Infra</h3>
+          <ul class="stack-list" style="margin: 12px 0 24px;">
+            <li>Python</li><li>Ansible</li><li>Linux</li><li>Windows</li><li>HP-UX</li><li>Shell Script</li><li>Docker</li>
+          </ul>
+          <h3>Middleware / DB / Cloud</h3>
+          <ul class="stack-list" style="margin: 12px 0 24px;">
+            <li>JEUS</li><li>Apache</li><li>MySQL</li><li>MariaDB</li><li>PostgreSQL</li><li>OracleDB</li><li>AWS EC2</li><li>Azure VM</li>
+          </ul>
+          <h3>Frontend / Collaboration</h3>
+          <ul class="stack-list" style="margin: 12px 0 0;">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Git</li><li>GitHub</li><li>VS Code</li><li>Postman</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="career" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>경력</h2>
+          <p>경력은 회사 소개보다 “무엇을 자동화했고 어떤 문제를 풀었는지”가 드러나게 적는 편이 더 강합니다.</p>
+        </div>
+        <div class="career-grid">
+          <article class="career-item">
+            <div class="career-top">
+              <div>
+                <h3>알티넷솔루션 · 시스템엔지니어</h3>
+                <div class="meta">2025.03 - Present · 솔루션지원팀</div>
+              </div>
+              <span class="tag">Current</span>
+            </div>
+            <p>다양한 운영환경(OS·네트워크·미들웨어·DB)을 대상으로 예방점검 및 구축 자동화를 수행했습니다.</p>
+            <ul class="timeline">
+              <li><strong>인천공항 POC · 한전 BMT</strong> Linux, Windows, Network, DB, JEUS, HP-UX 대상 예방점검 자동화 구축</li>
+              <li><strong>농협은행 고도화</strong> 자동화 코드 구조 개선 및 Jinja2 기반 동적 플레이북 작성</li>
+              <li><strong>신한은행 구축</strong> Custom Module 및 Python 필터 클래스로 결과 파싱·자동 판정 로직 구현</li>
+              <li><strong>농협은행 소산백업 / 도로공사 DR</strong> Azure VM 이관, 재기동, 비밀번호 변경 등 DR 자동화 수행</li>
+            </ul>
+          </article>
+
+          <article class="career-item">
+            <div class="career-top">
+              <div>
+                <h3>드림텍 · 인턴</h3>
+                <div class="meta">2021.08 - 2022.07 · 센서랩</div>
+              </div>
+              <span class="tag">Intern</span>
+            </div>
+            <p>센서 및 스마트워치 개발 프로젝트에 참여하며 실험, 테스트, 분석, 문서화 업무를 수행했습니다.</p>
+            <ul class="bullet-list">
+              <li>AutoCAD 기반 PCB 설계 작업</li>
+              <li>초음파 기반 스마트워치 제작 및 테스트</li>
+              <li>센서 성능 실험 및 데이터 분석·기록</li>
+              <li>디스플레이 센서 알고리즘 제작 기여</li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section id="projects" class="section">
-      <h3>Projects</h3>
+      <div class="container">
+        <div class="section-head">
+          <h2>대표 프로젝트</h2>
+          <p>이 부분이 포트폴리오의 핵심입니다. 각 카드 아래에 GitHub 링크, 맡은 역할, 사용 기술, 트러블슈팅을 추가해 완성도를 높이세요.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <h3>인천공항 POC · 한전 BMT</h3>
+              <span class="tag">Infra Automation</span>
+            </div>
+            <div class="meta">알티넷솔루션</div>
+            <p>Linux, Windows, Network, DB, JEUS, HP-UX 등 여러 플랫폼을 대상으로 시스템 예방점검 및 운영 자동화 코드를 작성했습니다.</p>
+            <ul class="bullet-list">
+              <li>행안부 기준 예방점검 체계 반영</li>
+              <li>전 항목 ALL PASS 달성에 기여</li>
+              <li>사업 수주에 연결되는 실무형 자동화 수행</li>
+            </ul>
+          </article>
 
-      <div class="card">
-        <h4>예방 점검 자동화</h4>
-        <p>Ansible 기반으로 시스템 점검을 자동화한 프로젝트</p>
+          <article class="project-card">
+            <div class="project-top">
+              <h3>농협은행 고도화</h3>
+              <span class="tag">Refactoring</span>
+            </div>
+            <div class="meta">알티넷솔루션</div>
+            <p>기존 자동화 코드 구조를 개선하고, Jinja2 변수·조건·반복을 활용한 동적 플레이북 작성 역량을 강화한 프로젝트입니다.</p>
+            <ul class="bullet-list">
+              <li>코드 구조 개선 및 재사용성 향상</li>
+              <li>운영환경별 분기 로직 정리</li>
+              <li>플레이북 유지보수성 개선</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <h3>신한은행 구축</h3>
+              <span class="tag">Python Extension</span>
+            </div>
+            <div class="meta">알티넷솔루션</div>
+            <p>Ansible Custom Module과 Python 필터 클래스를 개발해 명령어 출력 결과를 파싱하고 Pass/Fail 자동 판정 로직을 구현했습니다.</p>
+            <ul class="bullet-list">
+              <li>결과 구조화 및 판정 자동화</li>
+              <li>필터 클래스 기반 확장 설계</li>
+              <li>실무 운영 기준을 반영한 기능 구현</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <h3>도로공사 DR · 농협은행 소산백업</h3>
+              <span class="tag">DR / Azure</span>
+            </div>
+            <div class="meta">알티넷솔루션</div>
+            <p>클라우드 기반 DR 및 인프라 이관, Azure VM 환경 복제, 파일시스템·계정·권한 이관, 미들웨어 설치와 정상 동작 검증을 수행했습니다.</p>
+            <ul class="bullet-list">
+              <li>WAS/WEB 서비스 중지·재기동 자동화</li>
+              <li>비밀번호 변경 및 운영 절차 자동화</li>
+              <li>복구 시나리오 기반 자동화 코드 작성</li>
+            </ul>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h4>포트폴리오 웹사이트</h4>
-        <p>HTML/CSS 기반 정적 사이트 제작 및 GitHub Pages 배포</p>
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>학력 · 교육 · 자격</h2>
+          <p>이력서의 모든 내용을 다 넣기보다, 현재 직무와 연결되는 흐름만 남기는 편이 더 보기 좋습니다.</p>
+        </div>
+        <div class="education-grid">
+          <article class="edu-card">
+            <h3>충남대학교</h3>
+            <div class="meta">2019.03 - 2024.08</div>
+            <p>유기재료공학과 졸업</p>
+            <p>비전공 기반이지만 실제 실무 프로젝트와 개발 교육을 통해 인프라·자동화 엔지니어로 방향을 확장했습니다.</p>
+          </article>
+
+          <article class="edu-card">
+            <h3>한국ICT인재개발원</h3>
+            <div class="meta">2024.07 - 2025.01</div>
+            <p>데이터 처리기반 풀스택 개발자 과정 수료</p>
+            <p>Java, Spring Boot, HTML/CSS/JS, React, Docker, AWS 기반 개발 역량을 학습했습니다.</p>
+          </article>
+
+          <article class="edu-card">
+            <h3>자격 및 어학</h3>
+            <ul class="timeline">
+              <li><strong>TOEIC 955</strong> 2026.03 취득</li>
+              <li><strong>TOEIC Speaking AM</strong></li>
+              <li><strong>2종보통운전면허</strong> 2023.02</li>
+            </ul>
+          </article>
+
+          <article class="edu-card">
+            <h3>추가 가능 섹션</h3>
+            <p>이 자리에 아래 중 하나를 추가하면 더 좋아집니다.</p>
+            <ul class="bullet-list">
+              <li>기술 블로그 글 3개</li>
+              <li>GitHub 저장소 링크</li>
+              <li>자동화 아키텍처 다이어그램 이미지</li>
+              <li>문제 해결 사례 1개</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="section">
-      <h3>Contact</h3>
-      <p>Email: carlisle0722.lee@gmail.com</p>
-      <p>GitHub: github.com/carlisle0722</p>
+      <div class="container">
+        <div class="section-head">
+          <h2>연락처</h2>
+          <p>실제 배포 전에는 전화번호 공개 범위를 꼭 다시 확인하세요.</p>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>함께 일하고 싶은 분야</h3>
+            <p>인프라 자동화, 시스템 운영, 예방점검 체계화, DR/이관, 클라우드 기반 운영 표준화</p>
+            <div class="hero-actions">
+              <a class="btn primary" href="mailto:suzy0722@naver.com">이메일 보내기</a>
+              <a class="btn secondary" href="#top">맨 위로</a>
+            </div>
+          </article>
+
+          <article class="contact-card">
+            <h3>Contact Info</h3>
+            <ul class="contact-list">
+              <li><strong>Email</strong><br />suzy0722@naver.com</li>
+              <li><strong>GitHub</strong><br />https://github.com/여기에-아이디</li>
+              <li><strong>Blog / Notion</strong><br />https://여기에-링크</li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer>
+    <div class="container">© 2026 Suji Lee. Built with HTML & CSS.</div>
+  </footer>
 </body>
 </html>
