@@ -121,15 +121,42 @@ img {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.82fr);
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.78fr);
+  grid-template-areas:
+    "intro stats"
+    "about stats";
   gap: 30px;
   align-items: start;
 }
 
 .hero-main {
+  display: contents;
+}
+
+.hero-main > div:first-child {
+  grid-area: intro;
+}
+
+.hero-stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  align-self: start;
+}
+
+.hero-side {
+  grid-area: about;
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  max-width: 520px;
+}
+
+.profile-box {
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+  min-height: auto;
 }
 
 .eyebrow {
@@ -534,6 +561,17 @@ footer {
   .education-grid,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-grid {
+    grid-template-areas:
+      "intro"
+      "about"
+      "stats";
+  }
+
+  .hero-main {
+    display: contents;
   }
 
   .hero-stats {
