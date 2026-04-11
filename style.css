@@ -124,20 +124,9 @@ img {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.82fr);
-  grid-template-areas:
-    "intro stats"
-    "about stats";
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.78fr);
   gap: 30px 42px;
   align-items: start;
-}
-
-.hero-main {
-  display: contents;
-}
-
-.hero-main > div:first-child {
-  grid-area: intro;
 }
 
 .hero-copy {
@@ -150,16 +139,11 @@ img {
   box-shadow: var(--shadow-md);
 }
 
-.hero-side {
-  grid-area: about;
-  max-width: 560px;
-}
-
 .hero-stats {
-  grid-area: stats;
   display: grid;
   grid-template-columns: 1fr;
   gap: 14px;
+  align-self: stretch;
 }
 
 .eyebrow {
@@ -373,6 +357,34 @@ img {
 .profile-list span {
   color: #4c443c;
   font-size: 0.94rem;
+}
+
+.about-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(300px, 0.95fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.about-band-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-band-copy p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.about-band-list {
+  margin-top: 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.about-band-list div {
+  height: 100%;
 }
 
 .section {
@@ -723,21 +735,14 @@ footer {
   .intro-grid,
   .career-grid,
   .education-grid,
-  .contact-grid {
+  .contact-grid,
+  .about-band {
     grid-template-columns: 1fr;
   }
 
   .hero-grid {
     grid-template-columns: 1fr;
-    grid-template-areas:
-      "intro"
-      "stats"
-      "about";
     gap: 22px;
-  }
-
-  .hero-side {
-    max-width: none;
   }
 
   .hero-stats {
@@ -745,6 +750,10 @@ footer {
   }
 
   .hero-points {
+    grid-template-columns: 1fr;
+  }
+
+  .about-band-list {
     grid-template-columns: 1fr;
   }
 }
