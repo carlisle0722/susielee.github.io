@@ -633,4 +633,70 @@ footer {
   .btn {
     width: 100%;
   }
+  
 }
+  .project-summary {
+    margin: 10px 0 18px;
+    font-size: 0.98rem;
+    color: #3f536f;
+  }
+  
+  .project-body {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 16px;
+    margin-top: 6px;
+  }
+  
+  .project-block {
+    padding: 18px 18px 16px;
+    background: #f8fbff;
+    border: 1px solid #deebfa;
+    border-radius: 14px;
+  }
+  
+  .project-block h4 {
+    margin: 0 0 12px;
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: #1746a2;
+    letter-spacing: -0.01em;
+  }
+  
+  .project-block-accent {
+    background: linear-gradient(180deg, #eef5ff 0%, #f7fbff 100%);
+    border: 1px solid #cfe0ff;
+  }
+  
+  .result-list li {
+    font-weight: 600;
+    color: #24364f;
+  }
+  
+  .result-list li::before {
+    background: linear-gradient(135deg, #1746a2, #60a5fa);
+  }
+  
+  .project-card .meta {
+    margin-bottom: 12px;
+  }
+  
+  .project-top > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .project-top {
+    margin-bottom: 10px;
+  }
+  
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 820px) {
+    .project-body {
+      grid-template-columns: 1fr;
+    }
+  }
